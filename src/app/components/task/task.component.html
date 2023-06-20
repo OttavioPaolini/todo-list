@@ -1,0 +1,16 @@
+<!-- <mat-form-field>
+  <mat-label>Select an option</mat-label>
+  <mat-select [(ngModel)]="data.completed">
+    <mat-option [value]="true">Completate</mat-option>
+    <mat-option [value]="false">Da Completare</mat-option>
+  </mat-select>
+</mat-form-field> -->
+
+<mat-selection-list #task>
+
+  <mat-list-option  *ngFor="let task of data">
+    {{task.name}}
+  </mat-list-option>
+
+</mat-selection-list>
+

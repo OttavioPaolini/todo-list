@@ -5,11 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class ServiceService {
 
-  toDos = [
-    {name: 'Lavare i piatti', desctiption:'', done:true},
-    {name: 'Riordinare camera', desctiption:'', done:true},
-    {name: 'Pulire Bagno', desctiption:'', done:true}
-  ]
+  toDos = [{
+    name: '',
+    completed: false
+  }]
 
   constructor() { }
 

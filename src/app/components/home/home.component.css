@@ -1,0 +1,25 @@
+.banner{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 10vh;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    margin: 0
+}
+
+main{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+.newTask,.taskList{
+    width: 100%;
+}

@@ -1,1 +1,19 @@
-<p>home works!</p>
+<header>
+  <section class="banner">
+    <h1 id="title">Benvenuto nella tua ToDo list</h1>
+  </section>
+</header>
+
+<main>
+  <section class="newTask">
+    <app-new-task (exportTask)="onExportData($event)"></app-new-task>
+  </section>
+
+  <section class="taskList">
+    <app-task [data]="toDos"></app-task>
+  </section>
+</main>
+
+
+<!-- <app-progress [data]="toDos"></app-progress> -->
+

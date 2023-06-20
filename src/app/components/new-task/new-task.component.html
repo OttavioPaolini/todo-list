@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Aggiungi qualcosa da fare</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput [(ngModel)]="newTask">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="addTask(newTask)" (click)="exTask()">Aggiungi</button>
+    </mat-card-content>
+</mat-card>

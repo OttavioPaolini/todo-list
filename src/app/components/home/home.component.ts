@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceService } from 'src/app/service/service.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,13 +7,16 @@ import { ServiceService } from 'src/app/service/service.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  toDos : any
-
-  constructor(public service: ServiceService){}
-
+  toDos:any
+  constructor(){}
   ngOnInit(): void {
-    this.toDos = this.service.toDos;
-    console.log(this.toDos);
+    
+  }
+  
+  
+  onExportData(value:any){
+    this.toDos = value
+    console.log("eila", this.toDos);
     
   }
 
